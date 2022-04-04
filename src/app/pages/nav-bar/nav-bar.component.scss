@@ -1,0 +1,183 @@
+$colorBlue: #3f51b5;
+$colorWhile: #fff;
+.header {
+  z-index: 10000;
+  width: 100%;
+  height: 50px;
+  background-color: $colorBlue;
+  padding: 0px 20px;
+  color: $colorWhile;
+  border: 2px solid #4444;
+  box-shadow: 2px 0px 6px 3px #00000099;
+  margin: 0px;
+  .abc {
+    background-color: #3f51b5;
+    // height: 260px;
+    // width: 100%;
+    // padding: 0px !important;
+    // height: 250px !important;
+    .left-header {
+      height: 50px;
+      .logo-header {
+        .logo-text {
+          margin: 0 auto;
+          padding: 3px;
+          font-size: 18px;
+          text-decoration: none;
+          color: rgb(174, 0, 255);
+          font-weight: 600;
+        }
+        .toggle {
+          border-radius: 5px;
+          margin-top: 4px;
+          // color: $colorWhile;
+          font-size: 12px;
+
+          background-color: rgb(174, 0, 255);
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    .center-header {
+      height: 50px;
+      justify-content: space-between;
+      display: flex;
+      .box-header {
+        border: none !important;
+        .text-discount {
+          padding-top: 5px;
+          margin: 0;
+          font-size: 13px;
+        }
+        .select-discount {
+          background-color: transparent;
+          border: none !important;
+          font-size: 13px;
+          color: yellow;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+      .box-header.search {
+        position: relative;
+        width: 200px;
+        min-width: 100px;
+        height: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        .search-header {
+          position: absolute;
+
+          width: 100%;
+          padding: 2px 5px;
+          box-sizing: border-box;
+          border-radius: 5px;
+          outline: none;
+          font-size: 15px;
+          color: #666;
+          box-shadow: 1px 1px 9px 3px #00000026;
+          border: 1px solid rgba(181, 161, 161, 0.531);
+        }
+        button {
+          background: none;
+          border: none;
+          line-height: 30px;
+          font-size: 15px;
+          position: absolute;
+          right: 5px;
+          color: #666;
+          cursor: pointer;
+          top: 0px;
+          display: inline;
+        }
+      }
+      .box-header.select-discount {
+        padding: 0px 10px;
+        min-width: 150px;
+      }
+
+      .box-header.cart {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 3px;
+        font-size: 13px;
+        border: 1px solid #fff;
+        padding: 3px;
+        min-width: 100px;
+        height: 30px;
+        cursor: pointer;
+
+        box-sizing: border-box;
+        margin: 0 5px;
+        &:hover {
+          opacity: 0.8;
+        }
+        i {
+          padding: 5px;
+        }
+      }
+      .box-header.history-cart {
+        padding: 5px;
+        box-sizing: border-box;
+        font-size: 13px;
+        min-width: 110px;
+        cursor: pointer;
+        p {
+          margin-top: 10px;
+        }
+      }
+    }
+    .right-header {
+      height: 50px;
+      display: flex;
+      .left {
+        width: 40%;
+        min-width: 20px;
+      }
+      .right {
+        width: 60%;
+        justify-content: space-between;
+        display: flex;
+        .box-right {
+          padding: 5px 3px;
+          border-left: 1px solid #fff;
+          min-width: 80px;
+          .text-right-header {
+            font-size: 13px;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+          }
+          .text-right-header.last2 {
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    .abc {
+      .center-header {
+        margin-bottom: 36px !important;
+        .box-header.cart {
+          display: inline !important;
+        }
+        .box-header.history-cart {
+          display: none !important;
+        }
+      }
+      .right-header {
+        .left {
+          display: none !important;
+        }
+      }
+    }
+  }
+}

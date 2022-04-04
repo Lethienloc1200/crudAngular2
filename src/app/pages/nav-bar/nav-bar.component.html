@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <div class="header">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+    <div class="abc row collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="col-1  left-header">
+        <div class="logo-header">
+
+          <a href="" class="logo-text">Logo<span></span></a>
+          <button class="toggle" (click)="outPutToggle.emit()"><i class="fas fa-bars"></i></button>
+
+        </div>
+      </div>
+
+      <div class="col-sm-11 col-lg-5 center-header">
+        <div class="box-header select-discount">
+          <p class="text-discount">Xem giá khuyến mãi</p>
+          <select class="select-discount">
+            <option class="select-discount-option" value="">Hồ Chí Minh</option>
+          </select>
+        </div>
+        <div class="box-header search">
+          <input class="search-header" type="text" placeholder="search..">
+          <button><i class="fa fa-search"></i></button>
+        </div>
+        <div class="box-header cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Giỏ hàng</span>
+        </div>
+        <div class="box-header history-cart">
+          <p>Lịch sử đơn hàng</p>
+        </div>
+
+      </div>
+      <div class="col-sm-11 col-lg-6 right-header">
+
+        <div class="left">
+
+        </div>
+        <div class="right">
+          <div class="box-right">
+            <p class="text-right-header text-center">24</p>
+            <p class="text-right-header">Công nghệ</p>
+          </div>
+          <div class="box-right">
+            <p class="text-right-header last2">Hỏi đáp</p>
+          </div>
+          <div class="box-right">
+            <p class="text-right-header last2">Game</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</nav>

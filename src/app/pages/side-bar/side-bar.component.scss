@@ -1,0 +1,18 @@
+.side-nav-container {
+  overflow-y: scroll;
+  // background-color: rgba(243, 90, 90, 0.245);
+  width: 260px;
+  height: 100vh;
+}
+.side-nav-container::-webkit-scrollbar {
+  width: 5px;
+}
+.side-nav-container::-webkit-scrollbar-track {
+  background: #d1cdcd;
+}
+.side-nav-container::-webkit-scrollbar-thumb {
+  background: rgb(45, 44, 44);
+}
+.side-nav-container::-webkit-scrollbar-thumb:hover {
+  background: rgb(62, 62, 62);
+}
