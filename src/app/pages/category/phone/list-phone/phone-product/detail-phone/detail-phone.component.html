@@ -1,18 +1,18 @@
-<div class="container-detail-lapTop ">
-  <h1 class="text-center my-5"> Chi tiết về LAPTOP thông minh 2022</h1>
-  <div class="top-detail row">
+<div class="container-detail-phone ">
+  <h1 class="text-center my-5"> Chi tiết về Điện thoại thông minh 2022</h1>
+  <div class="top-detail row" *ngIf="phone">
 
     <div class="col-7">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img height="300" src="{{lapTop.image}}" class="d-block w-100" alt="...">
+            <img height="300" src="{{phone.image}}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img height="300" src="{{lapTop.image}}" class="d-block w-100" alt="...">
+            <img height="300" src="{{phone.image}}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img height="300" src="{{lapTop.image}}" class="d-block w-100" alt="...">
+            <img height="300" src="{{phone.image}}" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -43,10 +43,10 @@
       </div>
       <div class="location">
         <p>Địa điểm: TP HCM</p>
-        <p>Giá:{{lapTop.price}}</p>
+        <p>Giá:{{phone.price}}</p>
       </div>
       <div class="description">
-        <p>{{lapTop.description}}</p>
+        <p>{{phone.description}}</p>
       </div>
       <button mat-stroked-button color="warn" class="mx-1 my-1">Mua ngay</button>
 
@@ -54,7 +54,7 @@
   </div>
   <div class="body-detail row">
     <div class="col-10 mx-auto mt-4">
-      <p>{{lapTop.description}}</p>
+      <p>{{phone.description}}</p>
 
     </div>
   </div>

@@ -1,0 +1,78 @@
+{
+  "phoneList": [
+    {
+      "id": 1,
+      "title": "Điện Thoại abc",
+      "description": "Galaxy S22 Ultra 5G chiếc smartphone cao cấp nhất trong bộ 3 Galaxy S22 series mà Samsung đã cho ra mắt. Tích hợp bút S Pen hoàn hảo trong thân máy, trang bị vi xử lý mạnh mẽ cho các tác vụ sử dụng vô cùng mượt mà và nổi bật hơn với cụm camera không viền độc đáo mang đậm dấu ấn riêng.",
+      "image": "https://cdn.tgdd.vn/Products/Images/42/235838/Galaxy-S22-Ultra-Burgundy-600x600.jpg",
+      "type": "128Gb/56GB",
+      "discount": "Giảm 6",
+      "price": "50345 triệu Việt Nam đồng"
+    },
+    {
+      "id": 2,
+      "title": "Điện Thoại 2222222",
+      "description": "Mua ngày 17/3 giờ mới đáng giá máy sài mược.pin ok.bất wjfi kém đã đen ra tgdd đổi lại mà nv nói sàm nghe mệt cả đầu cuối cùng ko đổi đc.mẹ tính bán chịu lỗ và ko mua tgdd nữa.",
+      "image": "https://cdn.tgdd.vn/Products/Images/42/261888/realme-c35-thumb-new-600x600.jpg",
+      "type": "DEll/56GB",
+      "discount": "Giảm 2700k",
+      "price": "450 triệu Việt Nam đồng"
+    },
+    {
+      "id": 3,
+      "title": "Điện Thoại 333333333333",
+      "description": "Mua ngày 17/3 giờ mới đáng giá máy sài mược.pin ok.bất wjfi kém đã đen ra tgdd đổi lại mà nv nói sàm nghe mệt cả đầu cuối cùng ko đổi đc.mẹ tính bán chịu lỗ và ko mua tgdd nữa.",
+      "image": "https://cdn.tgdd.vn/Products/Images/42/235838/Galaxy-S22-Ultra-Burgundy-600x600.jpg",
+      "type": "DEll/56GB",
+      "discount": "Giảm 2500k",
+      "price": "5340 triệu Việt Nam đồng"
+    },
+    {
+      "id": 4,
+      "title": "Điện Thoại 44444444444444444",
+      "description": "Mua ngày 17/3 giờ mới đáng giá máy sài mược.pin ok.bất wjfi kém đã đen ra tgdd đổi lại mà nv nói sàm nghe mệt cả đầu cuối cùng ko đổi đc.mẹ tính bán chịu lỗ và ko mua tgdd nữa.",
+      "image": "https://cdn.tgdd.vn/Products/Images/42/153856/iphone-xi-do-600x600.jpg",
+      "type": "DEll/56GB",
+      "discount": "Giảm 200k",
+      "price": "50 triệu Việt Nam đồng"
+    }
+  ],
+  "lapTopList": [
+    {
+      "id": 1,
+      "title": "LapTop abc",
+      "description": "LapTop 5G chiếc smartphone cao cấp nhất trong bộ 3 Galaxy S22 series mà Samsung đã cho ra mắt. Tích hợp bút S Pen hoàn hảo trong thân máy, trang bị vi xử lý mạnh mẽ cho các tác vụ sử dụng vô cùng mượt mà và nổi bật hơn với cụm camera không viền độc đáo mang đậm dấu ấn riêng.",
+      "image": "https://cdn.tgdd.vn/Products/Images/44/263980/acer-nitro-5-gaming-an515-45-r6ev-r5-5600h-8gb-600x600.jpg",
+      "type": "ASUs/56GB",
+      "discount": "Giảm 200k",
+      "price": "50 triệu Việt Nam đồng"
+    },
+    {
+      "id": 2,
+      "title": "LapTop 2222222",
+      "description": "Mua ngày 17/3 giờ mới đáng giá máy sài mược.pin ok.bất wjfi kém đã đen ra tgdd đổi lại mà nv nói sàm nghe mệt cả đầu cuối cùng ko đổi đc.mẹ tính bán chịu lỗ và ko mua tgdd nữa.",
+      "image": "https://cdn.tgdd.vn/Products/Images/44/263977/acer-travelmate-b3-tmb311-31-p49d-n5030-nxvnfsv005-081221-100723-600x600.jpg",
+      "type": "HP/56GB",
+      "discount": "Giảm 200k",
+      "price": "50 triệu Việt Nam đồng"
+    },
+    {
+      "id": 3,
+      "title": "LapTop 33333333333",
+      "description": "Mua ngày 17/3 giờ mới đáng giá máy sài mược.pin ok.bất wjfi kém đã đen ra tgdd đổi lại mà nv nói sàm nghe mệt cả đầu cuối cùng ko đổi đc.mẹ tính bán chịu lỗ và ko mua tgdd nữa.",
+      "image": "https://cdn.tgdd.vn/Products/Images/44/269311/acer-aspire-3-a315-57g-573f-i5-nxhzrsv00b-120122-043700-600x600.jpg",
+      "type": "HP/56GB",
+      "discount": "Giảm 200k",
+      "price": "50 triệu Việt Nam đồng"
+    },
+    {
+      "id": 4,
+      "title": "LapTop 4444444444444",
+      "description": "Mua ngày 17/3 giờ mới đáng giá máy sài mược.pin ok.bất wjfi kém đã đen ra tgdd đổi lại mà nv nói sàm nghe mệt cả đầu cuối cùng ko đổi đc.mẹ tính bán chịu lỗ và ko mua tgdd nữa.",
+      "image": "https://cdn.tgdd.vn/Products/Images/44/253581/apple-macbook-pro-14-m1-pro-2021-600x600.jpg",
+      "type": "HP/56GB",
+      "discount": "Giảm 200k",
+      "price": "50 triệu Việt Nam đồng"
+    }
+  ]
+}

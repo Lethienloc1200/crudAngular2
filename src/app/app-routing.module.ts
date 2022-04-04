@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DetailProductComponent } from './pages/category/laptop/detail-product/detail-product.component';
+// import { LaptopComponent } from './pages/category/laptop/laptop.component';
+import { ListLaptopComponent } from './pages/category/laptop/list-laptop/list-laptop.component';
+import { DellComponent } from './pages/category/laptop/product-type/dell/dell.component';
+import { HpComponent } from './pages/category/laptop/product-type/hp/hp.component';
+import { ListPhoneComponent } from './pages/category/phone/list-phone/list-phone.component';
+import { DetailPhoneComponent } from './pages/category/phone/list-phone/phone-product/detail-phone/detail-phone.component';
+import { IphoneComponent } from './pages/category/phone/product-type/iphone/iphone.component';
+import { Iphone7Component } from './pages/category/phone/product-type/iphone/iphone7/iphone7.component';
 import { HomePageComponent } from './pages/home/home-page/home-page.component';
-import { LaptopComponent } from './pages/home/home-page/laptop/laptop.component';
-import { DellComponent } from './pages/home/home-page/laptop/product-type/dell/dell.component';
-import { HpComponent } from './pages/home/home-page/laptop/product-type/hp/hp.component';
-import { ListPhoneComponent } from './pages/home/home-page/phone/list-phone/list-phone.component';
-import { PhoneComponent } from './pages/home/home-page/phone/list-phone/phone-product/phone.component';
-// import { PhoneComponent } from './pages/home/home-page/phone/phone.component';
-import { IphoneComponent } from './pages/home/home-page/phone/product-type/iphone/iphone.component';
-import { Iphone7Component } from './pages/home/home-page/phone/product-type/iphone/iphone7/iphone7.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
-  { path: 'laptop', component: LaptopComponent },
+  { path: 'laptop', component: ListLaptopComponent },
+  { path: 'laptop/:id', component: DetailProductComponent },
 
   {
     path: 'laptop',
@@ -23,6 +25,7 @@ const routes: Routes = [
     ],
   },
   { path: 'phone', component: ListPhoneComponent },
+  { path: 'phone/:id', component: DetailPhoneComponent },
   {
     path: 'phone',
     children: [

@@ -62,7 +62,7 @@ const MaterialComponents = [
   MatBottomSheetModule,
   MatButtonModule,
   MatButtonToggleModule,
-  MatCardModule,
+  MatBadgeModule,
   MatCheckboxModule,
   MatChipsModule,
   MatStepperModule,
@@ -95,6 +95,7 @@ const MaterialComponents = [
   OverlayModule,
   PortalModule,
   ScrollingModule,
+  MatCardModule,
 ];
 
 @NgModule({
