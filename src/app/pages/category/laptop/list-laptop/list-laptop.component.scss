@@ -1,14 +1,27 @@
 .container-laptop {
-  padding: 0px !important;
-  margin: 20px 80px !important;
-
+  margin: 0 auto;
   .box-laptop-30 {
     width: 100%;
-    justify-content: space-between;
-    display: flex !important;
+    justify-content: flex-start;
+
+    display: flex;
     flex-wrap: wrap;
     .component {
-      display: contents !important;
+      display: contents;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  * {
+  }
+
+  .card-laptop {
+    height: 510px;
+  }
+}
+@media (max-width: 992px) {
+  .card-laptop {
+    height: 510px;
   }
 }

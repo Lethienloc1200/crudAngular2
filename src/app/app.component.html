@@ -2,14 +2,15 @@
   <div class="header-container">
     <app-nav-bar [toggle]="check" (outPutToggle)="showOrHide()"></app-nav-bar>
   </div>
-  <div class="main-body d-flex">
-    <div class="">
-      <app-side-bar [toggleABC]="check"></app-side-bar>
+  <div class="body-container">
+    <div class="main-body">
+      <div class="side-bar-left">
+        <app-side-bar [toggleABC]="check"></app-side-bar>
+      </div>
+      <div class="content-right" (click)="onClick()">
+        <router-outlet></router-outlet>
+      </div>
     </div>
-    <div class="col" (click)="onClick()">
-      <router-outlet></router-outlet>
-    </div>
-
-
   </div>
+
 </div>

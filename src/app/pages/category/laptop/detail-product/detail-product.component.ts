@@ -23,10 +23,9 @@ export class DetailProductComponent implements OnInit {
 
   loadLapTopDetail(id: any) {
     this.lapTopService.getLapTop(id).subscribe((data) => {
-      // this.customer = data;
       this.lapTop = new LapTop(data);
 
-      console.log('detailInfor', this.lapTop);
+      console.log('check laptop==>', this.lapTop);
     });
   }
 }

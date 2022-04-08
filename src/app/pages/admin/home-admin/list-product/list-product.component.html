@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <button [routerLink]="['../add']" mat-raised-button color="warn">Add phone
+        product</button>
+      <div class="table-list">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Discount</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of phoneList">
+
+              <td>{{item.title}}</td>
+              <td>{{item.description}}</td>
+              <td>{{item.price}}</td>
+              <td>{{item.discount}}</td>
+              <td>
+                <a [routerLink]="['../edit',item.id]"><button mat-raised-button color="primary"
+                    class="p-button-success">Edit <i class="fa fa-pencil"></i></button></a>
+                <button (click)="deletePhone(item.id)" mat-raised-button color="warn" class="p-button-success"><i
+                    class="fa fa-times"></i></button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>

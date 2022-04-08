@@ -2,5 +2,34 @@
   margin: 0;
   padding: 0;
 }
-.main-body {
+.container-demo-app {
+  width: 100%;
+  // background-color: red;
+  .header-container {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+  }
+  .body-container {
+    width: 100%;
+    padding-top: 100px;
+    .main-body {
+      // display: flex;
+      .side-bar-left {
+        position: fixed;
+        z-index: 20;
+        background: #fff;
+        top: 63px;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .container-demo-app {
+    .body-container {
+      .main-body {
+        // display: unset !important;
+      }
+    }
+  }
 }

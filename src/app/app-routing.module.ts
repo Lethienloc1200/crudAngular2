@@ -15,7 +15,6 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
   { path: 'laptop', component: ListLaptopComponent },
-  { path: 'laptop/:id', component: DetailProductComponent },
 
   {
     path: 'laptop',
@@ -24,13 +23,13 @@ const routes: Routes = [
       { path: 'hp', component: HpComponent },
     ],
   },
+  { path: 'laptop/:id', component: DetailProductComponent },
   { path: 'phone', component: ListPhoneComponent },
   { path: 'phone/:id', component: DetailPhoneComponent },
   {
     path: 'phone',
     children: [
       { path: 'iphone', component: IphoneComponent },
-
       {
         path: 'iphone',
         children: [{ path: 'iphone7', component: Iphone7Component }],

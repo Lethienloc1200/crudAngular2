@@ -1,0 +1,102 @@
+<div class="container">
+  <h2>Edit-form works!</h2>
+  <form class="example-form" [formGroup]="phoneFormGroup" (ngSubmit)="EditProduct()">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Title</mat-label>
+      <input type="text" matInput formControlName="title" placeholder="Name product" />
+      <div *ngIf="!title?.valid && (title?.dirty ||title?.touched)">
+        <mat-error style="margin:0px; padding:0px" [hidden]="!title?.errors?.['required']">
+          Title is required
+        </mat-error>
+        <mat-error [hidden]="!title?.errors?.['minlength']">
+          Min length must be 3
+        </mat-error>
+        <mat-error [hidden]="!title?.errors?.['maxlength']">
+          Max length must be less than 50
+        </mat-error>
+      </div>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Description</mat-label>
+      <input type="text" matInput formControlName="description" placeholder="Description product">
+      <div *ngIf="!description?.valid && (description?.dirty ||description?.touched)">
+        <mat-error style="margin:0px; padding:0px" [hidden]="!description?.errors?.['required']">
+          Description is required
+        </mat-error>
+        <mat-error [hidden]="!description?.errors?.['minlength']">
+          Min length must be 3
+        </mat-error>
+        <mat-error [hidden]="!description?.errors?.['maxlength']">
+          Max length must be less than 50
+        </mat-error>
+      </div>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Price</mat-label>
+      <input type="number" matInput formControlName="price" placeholder="Price product">
+      <div *ngIf="!price?.valid && (price?.dirty ||price?.touched)">
+        <mat-error style="margin:0px; padding:0px" [hidden]="!title?.errors?.['required']">
+          price is required
+        </mat-error>
+        <mat-error [hidden]="!price?.errors?.['minlength']">
+          Min length must be 3
+        </mat-error>
+        <mat-error [hidden]="!price?.errors?.['maxlength']">
+          Max length must be less than 50
+        </mat-error>
+      </div>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Type product</mat-label>
+      <input type="text" matInput formControlName="type" placeholder="Type product product">
+      <div *ngIf="!type?.valid && (type?.dirty ||type?.touched)">
+        <mat-error style="margin:0px; padding:0px" [hidden]="!title?.errors?.['required']">
+          type is required
+        </mat-error>
+        <mat-error [hidden]="!type?.errors?.['minlength']">
+          Min length must be 3
+        </mat-error>
+        <mat-error [hidden]="!type?.errors?.['maxlength']">
+          Max length must be less than 50
+        </mat-error>
+      </div>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Discount</mat-label>
+      <input type="text" matInput formControlName="discount" placeholder="Discount product">
+      <div *ngIf="!discount?.valid && (discount?.dirty ||discount?.touched)">
+        <mat-error style="margin:0px; padding:0px" [hidden]="!discount?.errors?.['required']">
+          discount is required
+        </mat-error>
+        <mat-error [hidden]="!discount?.errors?.['minlength']">
+          Min length must be 3
+        </mat-error>
+        <mat-error [hidden]="!discount?.errors?.['maxlength']">
+          Max length must be less than 50
+        </mat-error>
+      </div>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Image</mat-label>
+      <input type="text" matInput formControlName="image" placeholder="Image product">
+      <div *ngIf="!image?.valid && (image?.dirty ||image?.touched)">
+        <mat-error style="margin:0px; padding:0px" [hidden]="!title?.errors?.['required']">
+          image is required
+        </mat-error>
+        <mat-error [hidden]="!image?.errors?.['minlength']">
+          Min length must be 3
+        </mat-error>
+        <mat-error [hidden]="!image?.errors?.['maxlength']">
+          Max length must be less than 50
+        </mat-error>
+      </div>
+
+    </mat-form-field>
+
+    <button [disabled]="!phoneFormGroup.valid" type="submit" mat-raised-button color="primary">Edit
+      product</button>
+    <button mat-raised-button (click)="back()" color="warn">Back
+    </button>
+  </form>
+</div>

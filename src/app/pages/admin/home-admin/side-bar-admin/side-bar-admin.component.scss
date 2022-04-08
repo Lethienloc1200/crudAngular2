@@ -1,0 +1,32 @@
+.sidebar-admin {
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 105px;
+  overflow-y: scroll;
+  ul {
+    li {
+      text-decoration: none;
+      list-style: none;
+      button {
+        margin: 20px;
+      }
+    }
+  }
+}
+
+.sidebar-admin::-webkit-scrollbar {
+  width: 5px;
+}
+.sidebar-admin::-webkit-scrollbar-track {
+  background: #d1cdcd;
+}
+.sidebar-admin::-webkit-scrollbar-thumb {
+  background: rgb(45, 44, 44);
+}
+.sidebar-admin::-webkit-scrollbar-thumb:hover {
+  background: rgb(62, 62, 62);
+}

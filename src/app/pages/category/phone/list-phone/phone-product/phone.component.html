@@ -15,8 +15,9 @@
 
       <button class="btn-phone-card" mat-stroked-button color="primary">{{item.type}}</button>
     </div>
-    <p class="price-card  ">{{item.price}}</p>
-    <p class="gift-text">{{item.discount}}</p>
+    <p class="price-card  ">{{item.price | currency:"VND"}}</p>
+
+    <p class="gift-text">{{item.discount| currency:"VND"}}</p>
     <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></p>
     <span class="compare"><i></i>So Sanh</span>
   </mat-card>

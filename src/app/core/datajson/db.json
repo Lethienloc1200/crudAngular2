@@ -6,8 +6,8 @@
       "description": "Galaxy S22 Ultra 5G chiếc smartphone cao cấp nhất trong bộ 3 Galaxy S22 series mà Samsung đã cho ra mắt. Tích hợp bút S Pen hoàn hảo trong thân máy, trang bị vi xử lý mạnh mẽ cho các tác vụ sử dụng vô cùng mượt mà và nổi bật hơn với cụm camera không viền độc đáo mang đậm dấu ấn riêng.",
       "image": "https://cdn.tgdd.vn/Products/Images/42/235838/Galaxy-S22-Ultra-Burgundy-600x600.jpg",
       "type": "128Gb/56GB",
-      "discount": "Giảm 6",
-      "price": "50345 triệu Việt Nam đồng"
+      "discount": 333333,
+      "price": 3333333333333
     },
     {
       "id": 2,
@@ -15,8 +15,8 @@
       "description": "Mua ngày 17/3 giờ mới đáng giá máy sài mược.pin ok.bất wjfi kém đã đen ra tgdd đổi lại mà nv nói sàm nghe mệt cả đầu cuối cùng ko đổi đc.mẹ tính bán chịu lỗ và ko mua tgdd nữa.",
       "image": "https://cdn.tgdd.vn/Products/Images/42/261888/realme-c35-thumb-new-600x600.jpg",
       "type": "DEll/56GB",
-      "discount": "Giảm 2700k",
-      "price": "450 triệu Việt Nam đồng"
+      "discount": 44444444444444,
+      "price": 444444444
     },
     {
       "id": 3,
@@ -24,8 +24,8 @@
       "description": "Mua ngày 17/3 giờ mới đáng giá máy sài mược.pin ok.bất wjfi kém đã đen ra tgdd đổi lại mà nv nói sàm nghe mệt cả đầu cuối cùng ko đổi đc.mẹ tính bán chịu lỗ và ko mua tgdd nữa.",
       "image": "https://cdn.tgdd.vn/Products/Images/42/235838/Galaxy-S22-Ultra-Burgundy-600x600.jpg",
       "type": "DEll/56GB",
-      "discount": "Giảm 2500k",
-      "price": "5340 triệu Việt Nam đồng"
+      "discount": 444444444,
+      "price": 777777
     },
     {
       "id": 4,
@@ -35,6 +35,78 @@
       "type": "DEll/56GB",
       "discount": "Giảm 200k",
       "price": "50 triệu Việt Nam đồng"
+    },
+    {
+      "image": "https://cdn.tgdd.vn/Products/Images/42/235838/Galaxy-S22-Ultra-Burgundy-600x600.jpg",
+      "title": "Điện Thoại abc",
+      "description": "Galaxy S22 Ultra 5G chiếc smartphone cao cấp nhất trong bộ 3 Galaxy S22 series mà Samsung đã cho ra mắt. Tích hợp bút S Pen hoàn hảo trong thân máy, trang bị vi xử lý mạnh mẽ cho các tác vụ sử dụng vô cùng mượt mà và nổi bật hơn với cụm camera không viền độc đáo mang đậm dấu ấn riêng.",
+      "price": 3333333333333,
+      "type": "128Gb/56GB",
+      "discount": 333333,
+      "id": 8
+    },
+    {
+      "image": "https://cdn.tgdd.vn/Products/Images/42/261888/realme-c35-thumb-new-600x600.jpg",
+      "title": "Điện Thoại 2222222",
+      "description": "Mua ngày 17/3 giờ mới đáng giá máy sài mược.pin ok.bất wjfi kém đã đen ra tgdd đổi lại mà nv nói sàm nghe mệt cả đầu cuối cùng ko đổi đc.mẹ tính bán chịu lỗ và ko mua tgdd nữa.",
+      "price": 444444444,
+      "type": "DEll/56GB",
+      "discount": 44444444444444,
+      "id": 11
+    },
+    {
+      "image": "ww",
+      "title": "wwwwwwwww",
+      "description": "wwwww",
+      "price": 222222,
+      "type": "1111",
+      "discount": "www",
+      "id": 14
+    },
+    {
+      "image": "https://cdn.tgdd.vn/Products/Images/42/235838/Galaxy-S22-Ultra-Burgundy-600x600.jpg",
+      "title": "Điện Thoại abc",
+      "description": "Galaxy S22 Ultra 5G chiếc smartphone cao cấp nhất trong bộ 3 Galaxy S22 series mà Samsung đã cho ra mắt. Tích hợp bút S Pen hoàn hảo trong thân máy, trang bị vi xử lý mạnh mẽ cho các tác vụ sử dụng vô cùng mượt mà và nổi bật hơn với cụm camera không viền độc đáo mang đậm dấu ấn riêng.",
+      "price": 3333333333333,
+      "type": "128Gb/56GB",
+      "discount": 333333,
+      "id": 16
+    },
+    {
+      "image": "https://cdn.tgdd.vn/Products/Images/42/235838/Galaxy-S22-Ultra-Burgundy-600x600.jpg",
+      "title": "Điện Thoại abc",
+      "description": "Galaxy S22 Ultra 5G chiếc smartphone cao cấp nhất trong bộ 3 Galaxy S22 series mà Samsung đã cho ra mắt. Tích hợp bút S Pen hoàn hảo trong thân máy, trang bị vi xử lý mạnh mẽ cho các tác vụ sử dụng vô cùng mượt mà và nổi bật hơn với cụm camera không viền độc đáo mang đậm dấu ấn riêng.",
+      "price": 3333333333333,
+      "type": "128Gb/56GB",
+      "discount": 333333,
+      "id": 17
+    },
+    {
+      "image": "https://cdn.tgdd.vn/Products/Images/42/235838/Galaxy-S22-Ultra-Burgundy-600x600.jpg",
+      "title": "Nokia",
+      "description": "Siêu mịn xịn thơm",
+      "price": 2000,
+      "type": "loại chọi bể đầu",
+      "discount": "200000000",
+      "id": 18
+    },
+    {
+      "image": "",
+      "title": "",
+      "description": "",
+      "price": "",
+      "type": "",
+      "discount": "",
+      "id": 19
+    },
+    {
+      "image": "",
+      "title": "",
+      "description": "",
+      "price": "",
+      "type": "",
+      "discount": "",
+      "id": 20
     }
   ],
   "lapTopList": [
@@ -53,14 +125,41 @@
       "description": "Mua ngày 17/3 giờ mới đáng giá máy sài mược.pin ok.bất wjfi kém đã đen ra tgdd đổi lại mà nv nói sàm nghe mệt cả đầu cuối cùng ko đổi đc.mẹ tính bán chịu lỗ và ko mua tgdd nữa.",
       "image": "https://cdn.tgdd.vn/Products/Images/44/263977/acer-travelmate-b3-tmb311-31-p49d-n5030-nxvnfsv005-081221-100723-600x600.jpg",
       "type": "HP/56GB",
-      "discount": "Giảm 200k",
-      "price": "50 triệu Việt Nam đồng"
+      "discount": "40000",
+      "price": "5000000"
     },
     {
       "id": 3,
       "title": "LapTop 33333333333",
       "description": "Mua ngày 17/3 giờ mới đáng giá máy sài mược.pin ok.bất wjfi kém đã đen ra tgdd đổi lại mà nv nói sàm nghe mệt cả đầu cuối cùng ko đổi đc.mẹ tính bán chịu lỗ và ko mua tgdd nữa.",
       "image": "https://cdn.tgdd.vn/Products/Images/44/269311/acer-aspire-3-a315-57g-573f-i5-nxhzrsv00b-120122-043700-600x600.jpg",
+      "type": "HP/56GB",
+      "discount": "1000000",
+      "price": "5000000"
+    },
+    {
+      "id": 4,
+      "title": "LapTop 4444444444444",
+      "description": "Mua ngày 17/3 giờ mới đáng giá máy sài mược.pin ok.bất wjfi kém đã đen ra tgdd đổi lại mà nv nói sàm nghe mệt cả đầu cuối cùng ko đổi đc.mẹ tính bán chịu lỗ và ko mua tgdd nữa.",
+      "image": "https://cdn.tgdd.vn/Products/Images/44/253581/apple-macbook-pro-14-m1-pro-2021-600x600.jpg",
+      "type": "HP/56GB",
+      "discount": "Giảm 200k",
+      "price": "5000000"
+    },
+    {
+      "id": 4,
+      "title": "LapTop 4444444444444",
+      "description": "Mua ngày 17/3 giờ mới đáng giá máy sài mược.pin ok.bất wjfi kém đã đen ra tgdd đổi lại mà nv nói sàm nghe mệt cả đầu cuối cùng ko đổi đc.mẹ tính bán chịu lỗ và ko mua tgdd nữa.",
+      "image": "https://cdn.tgdd.vn/Products/Images/44/253581/apple-macbook-pro-14-m1-pro-2021-600x600.jpg",
+      "type": "HP/56GB",
+      "discount": "Giảm 200k",
+      "price": "50 triệu Việt Nam đồng"
+    },
+    {
+      "id": 4,
+      "title": "LapTop 4444444444444",
+      "description": "Mua ngày 17/3 giờ mới đáng giá máy sài mược.pin ok.bất wjfi kém đã đen ra tgdd đổi lại mà nv nói sàm nghe mệt cả đầu cuối cùng ko đổi đc.mẹ tính bán chịu lỗ và ko mua tgdd nữa.",
+      "image": "https://cdn.tgdd.vn/Products/Images/44/253581/apple-macbook-pro-14-m1-pro-2021-600x600.jpg",
       "type": "HP/56GB",
       "discount": "Giảm 200k",
       "price": "50 triệu Việt Nam đồng"
