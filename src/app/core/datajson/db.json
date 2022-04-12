@@ -56,9 +56,9 @@
     },
     {
       "image": "ww",
-      "title": "wwwwwwwww",
-      "description": "wwwww",
-      "price": 222222,
+      "title": "11111",
+      "description": "222222",
+      "price": 3333333,
       "type": "1111",
       "discount": "www",
       "id": 14
@@ -73,40 +73,18 @@
       "id": 16
     },
     {
-      "image": "https://cdn.tgdd.vn/Products/Images/42/235838/Galaxy-S22-Ultra-Burgundy-600x600.jpg",
-      "title": "Điện Thoại abc",
-      "description": "Galaxy S22 Ultra 5G chiếc smartphone cao cấp nhất trong bộ 3 Galaxy S22 series mà Samsung đã cho ra mắt. Tích hợp bút S Pen hoàn hảo trong thân máy, trang bị vi xử lý mạnh mẽ cho các tác vụ sử dụng vô cùng mượt mà và nổi bật hơn với cụm camera không viền độc đáo mang đậm dấu ấn riêng.",
-      "price": 3333333333333,
-      "type": "128Gb/56GB",
-      "discount": 333333,
-      "id": 17
-    },
-    {
-      "image": "https://cdn.tgdd.vn/Products/Images/42/235838/Galaxy-S22-Ultra-Burgundy-600x600.jpg",
-      "title": "Nokia",
-      "description": "Siêu mịn xịn thơm",
+      "image": "ẢNH",
+      "title": "tieudeaaaaa",
+      "description": "MIEUTA ==> VANG, 20GB/512",
       "price": 2000,
-      "type": "loại chọi bể đầu",
-      "discount": "200000000",
-      "id": 18
-    },
-    {
-      "image": "",
-      "title": "",
-      "description": "",
-      "price": "",
-      "type": "",
-      "discount": "",
-      "id": 19
-    },
-    {
-      "image": "",
-      "title": "",
-      "description": "",
-      "price": "",
-      "type": "",
-      "discount": "",
-      "id": 20
+      "type": "LOẠI IPHONE",
+      "discount": "200",
+      "category": {
+        "name": "Yellow",
+        "key": "yellow"
+      },
+      "selected": "20gb/512gb",
+      "id": 17
     }
   ],
   "lapTopList": [

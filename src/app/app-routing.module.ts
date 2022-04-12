@@ -10,6 +10,7 @@ import { DetailPhoneComponent } from './pages/category/phone/list-phone/phone-pr
 import { IphoneComponent } from './pages/category/phone/product-type/iphone/iphone.component';
 import { Iphone7Component } from './pages/category/phone/product-type/iphone/iphone7/iphone7.component';
 import { HomePageComponent } from './pages/home/home-page/home-page.component';
+import { NotFoundComponent } from './share/not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -24,6 +25,7 @@ const routes: Routes = [
     ],
   },
   { path: 'laptop/:id', component: DetailProductComponent },
+
   { path: 'phone', component: ListPhoneComponent },
   { path: 'phone/:id', component: DetailPhoneComponent },
   {
@@ -37,7 +39,7 @@ const routes: Routes = [
     ],
   },
 
-  // { path: '**', component: PageNotFoundComponent },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

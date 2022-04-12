@@ -35,7 +35,7 @@ export class AdminService {
       .post<any>(url, data, this.httpOptions)
       .pipe(catchError(this.handleError));
   }
-  public EditPhone(phoneId: number, data: Phone) {
+  public editPhone(phoneId: number, data: Phone) {
     const url = `${this.REST_API_SERVER}/phoneList/` + phoneId;
     return this.httpClient
       .put<any>(url, data, this.httpOptions)

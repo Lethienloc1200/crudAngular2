@@ -6,6 +6,8 @@ export class Phone {
   type: string;
   discount: string;
   image: string;
+  color: string;
+  config: string;
   constructor(params: any) {
     this.id = params.id;
     this.title = params.title;
@@ -14,5 +16,7 @@ export class Phone {
     this.image = params.image;
     this.type = params.type;
     this.discount = params.discount;
+    this.color = params.category?.name;
+    this.config = params.selected;
   }
 }

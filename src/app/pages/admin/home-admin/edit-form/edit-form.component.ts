@@ -78,9 +78,9 @@ export class EditFormComponent implements OnInit {
   back() {
     this.location.back();
   }
-  EditProduct() {
+  editProduct(id: any) {
     const newPhone = this.phoneFormGroup.getRawValue();
-    this.adminService.addPhone(newPhone).subscribe((data) => {
+    this.adminService.editPhone(id, newPhone).subscribe((data) => {
       this.phoneFormGroup.markAsPristine();
       console.log('data', data);
     });

@@ -1,133 +1,139 @@
 <div class="container ">
-  <form [formGroup]="phoneFormGroupContainer" (ngSubmit)="addProduct()">
+  <form [formGroup]="form" (ngSubmit)="addProduct()" *ngIf="form">
     <ng-container formArrayName="phoneFormArrayRow">
-      <ng-container *ngFor="let formPhoneRo of phoneFormArrayRow.controls; let i = index">
-        <div class="row phone-form-row" [formGroup]="formPhoneRow">
-          <div class="col-6">
-            <!-- <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Title</mat-label>
-            <input type="text" matInput formControlName="title" placeholder="Name product" />
-            <div *ngIf="!title?.valid && (title?.dirty ||title?.touched)">
-              <mat-error style="margin:0px; padding:0px" [hidden]="!title?.errors?.['required']">
-                Title is required
-              </mat-error>
-              <mat-error [hidden]="!title?.errors?.['minlength']">
-                Min length must be 3
-              </mat-error>
-              <mat-error [hidden]="!title?.errors?.['maxlength']">
-                Max length must be less than 50
-              </mat-error>
-            </div>
-          </mat-form-field> -->
-            <!-- <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Description</mat-label>
-            <input type="text" matInput formControlName="description" placeholder="Description product">
-            <div *ngIf="!description?.valid && (description?.dirty ||description?.touched)">
-              <mat-error style="margin:0px; padding:0px" [hidden]="!description?.errors?.['required']">
-                Description is required
-              </mat-error>
-              <mat-error [hidden]="!description?.errors?.['minlength']">
-                Min length must be 3
-              </mat-error>
-              <mat-error [hidden]="!description?.errors?.['maxlength']">
-                Max length must be less than 50
-              </mat-error>
-            </div>
-          </mat-form-field> -->
+      <ng-container *ngFor="let formPhoneRow of phoneFormArrayRow.controls; let index = index">
+        <div class="row phone-form-row" [formGroupName]="index.toString()">
+          <div class="col-4">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Title</mat-label>
+              <input type="text" matInput formControlName="title" placeholder="Name product" />
+              <div *ngIf="!title?.valid && (title?.dirty ||title?.touched)">
+                <mat-error style="margin:0px; padding:0px" [hidden]="!title?.errors?.['required']">
+                  Title is required
+                </mat-error>
+                <mat-error [hidden]="!title?.errors?.['minlength']">
+                  Min length must be 2
+                </mat-error>
+                <mat-error [hidden]="!title?.errors?.['maxlength']">
+                  Max length must be less than 50
+                </mat-error>
+              </div>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Description</mat-label>
+              <input type="text" matInput formControlName="description" placeholder="Description product">
+              <div *ngIf="!description?.valid && (description?.dirty ||description?.touched)">
+                <mat-error style="margin:0px; padding:0px" [hidden]="!description?.errors?.['required']">
+                  Description is required
+                </mat-error>
+                <mat-error [hidden]="!description?.errors?.['minlength']">
+                  Min length must be 2
+                </mat-error>
+                <mat-error [hidden]="!description?.errors?.['maxlength']">
+                  Max length must be less than 50
+                </mat-error>
+              </div>
+            </mat-form-field>
             <mat-form-field class="example-full-width" appearance="fill">
               <mat-label>Price</mat-label>
               <input type="number" matInput formControlName="price" placeholder="Price product">
-              <!-- <div *ngIf="!price?.valid && (price?.dirty ||price?.touched)">
-              <mat-error style="margin:0px; padding:0px" [hidden]="!price?.errors?.['required']">
-                price is required
-              </mat-error>
-              <mat-error [hidden]="!price?.errors?.['minlength']">
-                Min length must be 3
-              </mat-error>
-              <mat-error [hidden]="!price?.errors?.['maxlength']">
-                Max length must be less than 50
-              </mat-error>
-            </div> -->
+              <div *ngIf="!price?.valid && (price?.dirty ||price?.touched)">
+                <mat-error style="margin:0px; padding:0px" [hidden]="!price?.errors?.['required']">
+                  price is required
+                </mat-error>
+                <mat-error [hidden]="!price?.errors?.['minlength']">
+                  Min length must be 2
+                </mat-error>
+                <mat-error [hidden]="!price?.errors?.['maxlength']">
+                  Max length must be less than 50
+                </mat-error>
+              </div>
             </mat-form-field>
-
           </div>
-        </div>
-        <!-- <div class="col-6">
-          <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Type product</mat-label>
-            <input type="text" matInput formControlName="type" placeholder="Type product product">
-            <div *ngIf="!type?.valid && (type?.dirty ||type?.touched)">
-              <mat-error style="margin:0px; padding:0px" [hidden]="!type?.errors?.['required']">
-                type is required
-              </mat-error>
-              <mat-error [hidden]="!type?.errors?.['minlength']">
-                Min length must be 3
-              </mat-error>
-              <mat-error [hidden]="!type?.errors?.['maxlength']">
-                Max length must be less than 50
-              </mat-error>
-            </div>
-          </mat-form-field>
-          <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Discount</mat-label>
-            <input type="text" matInput formControlName="discount" placeholder="Discount product">
-            <div *ngIf="!discount?.valid && (discount?.dirty ||discount?.touched)">
-              <mat-error style="margin:0px; padding:0px" [hidden]="!discount?.errors?.['required']">
-                discount is required
-              </mat-error>
-              <mat-error [hidden]="!discount?.errors?.['minlength']">
-                Min length must be 3
-              </mat-error>
-              <mat-error [hidden]="!discount?.errors?.['maxlength']">
-                Max length must be less than 50
-              </mat-error>
-            </div>
-          </mat-form-field>
-          <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Image</mat-label>
-            <input type="text" matInput formControlName="image" placeholder="Image product">
-            <div *ngIf="!image?.valid && (image?.dirty ||image?.touched)">
-              <mat-error style="margin:0px; padding:0px" [hidden]="!image?.errors?.['required']">
-                image is required
-              </mat-error>
-              <mat-error [hidden]="!image?.errors?.['minlength']">
-                Min length must be 3
-              </mat-error>
-              <mat-error [hidden]="!image?.errors?.['maxlength']">
-                Max length must be less than 50
-              </mat-error>
-            </div>
-        </div> -->
+          <div class="col-4">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Type product</mat-label>
+              <input type="text" matInput formControlName="type" placeholder="Type product product">
+              <div *ngIf="!type?.valid && (type?.dirty ||type?.touched)">
+                <mat-error style="margin:0px; padding:0px" [hidden]="!type?.errors?.['required']">
+                  type is required
+                </mat-error>
+                <mat-error [hidden]="!type?.errors?.['minlength']">
+                  Min length must be 2
+                </mat-error>
+                <mat-error [hidden]="!type?.errors?.['maxlength']">
+                  Max length must be less than 50
+                </mat-error>
+              </div>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Discount</mat-label>
+              <input type="text" matInput formControlName="discount" placeholder="Discount product">
+              <div *ngIf="!discount?.valid && (discount?.dirty ||discount?.touched)">
+                <mat-error style="margin:0px; padding:0px" [hidden]="!discount?.errors?.['required']">
+                  discount is required
+                </mat-error>
+                <mat-error [hidden]="!discount?.errors?.['minlength']">
+                  Min length must be 2
+                </mat-error>
+                <mat-error [hidden]="!discount?.errors?.['maxlength']">
+                  Max length must be less than 50
+                </mat-error>
+              </div>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Image</mat-label>
+              <input type="text" matInput formControlName="image" placeholder="Image product">
+              <div *ngIf="!image?.valid && (image?.dirty ||image?.touched)">
+                <mat-error style="margin:0px; padding:0px" [hidden]="!image?.errors?.['required']">
+                  image is required
+                </mat-error>
+                <mat-error [hidden]="!image?.errors?.['minlength']">
+                  Min length must be 2
+                </mat-error>
+                <mat-error [hidden]="!image?.errors?.['maxlength']">
+                  Max length must be less than 50
+                </mat-error>
+              </div>
+              <!-- </div> -->
 
-        <!-- </mat-form-field> -->
-        <!-- <span (click)="deleteForm()">Xóa</span> -->
-        <!-- <h5>Color</h5> -->
-        <!-- <div class="form-check">
+            </mat-form-field>
+          </div>
+          <div class="col-3">
+            <h5>Color</h5>
+            <div class="form-check">
               <div *ngFor="let category of categories" class="p-field-checkbox">
-                <p-radioButton [inputId]="category.key" name="category" [value]="category" [(ngModel)]="selectedCategory"
-                  [disabled]="category.key === 'green'"></p-radioButton>
+                <p-radioButton [inputId]="category.key" name="category" [value]="category" formControlName="category">
+                </p-radioButton>
                 <label [for]="category.key">{{category.name}}</label>
               </div>
-            </div> -->
-        <!-- <mat-form-field appearance="fill">
+            </div>
+
+            <mat-form-field appearance="fill">
+
               <mat-label>Select an option</mat-label>
-              <mat-select [(value)]="selected">
+              <mat-select formControlName="selected">
                 <mat-option>None</mat-option>
                 <mat-option value="8gb/128gb">8gb/128gb</mat-option>
                 <mat-option value="12gb/256gb">12gb/256gb</mat-option>
-                <mat-option value="12gb/512gb">2gb/512gb</mat-option>
+                <mat-option value="20gb/512gb">20gb/512gb</mat-option>
               </mat-select>
-            </mat-form-field> -->
+            </mat-form-field>
 
-        <!-- <p>You selected: {{selected}}</p>
+          </div>
+          <div class="col-1">
 
-      </div> -->
-        <!-- </div> -->
+
+            <button type="button" class="btn btn-primary" (click)="deleteForm(index)">-</button>
+          </div>
+
+        </div>
+
       </ng-container>
     </ng-container>
 
 
-    <button [disabled]="!phoneFormGroupContainer.valid" type="submit" mat-raised-button color="primary">Add
+    <button type="submit" mat-raised-button color="primary">Save
       product</button>
     <button mat-raised-button color="primary" (click)="addFormRow()" type="button">+</button>
   </form>
